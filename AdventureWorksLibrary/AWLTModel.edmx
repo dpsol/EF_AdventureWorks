@@ -726,7 +726,7 @@
           <EntitySet Name="Address" EntityType="Self.Address" />
           <EntitySet Name="Customer" EntityType="Self.Customer" />
           <EntitySet Name="CustomerAddress" EntityType="Self.CustomerAddress" />
-          <EntitySet Name="Product" EntityType="Self.Product" />
+          <EntitySet Name="Products" EntityType="Self.Product" />
           <EntitySet Name="ProductCategory" EntityType="Self.ProductCategory" />
           <EntitySet Name="ProductDescription" EntityType="Self.ProductDescription" />
           <EntitySet Name="ProductModel" EntityType="Self.ProductModel" />
@@ -755,14 +755,14 @@
           </AssociationSet>
           <AssociationSet Name="FK_Product_ProductCategory_ProductCategoryID" Association="Self.FK_Product_ProductCategory_ProductCategoryID">
             <End Role="ProductCategory" EntitySet="ProductCategory" />
-            <End Role="Product" EntitySet="Product" />
+            <End Role="Product" EntitySet="Products" />
           </AssociationSet>
           <AssociationSet Name="FK_Product_ProductModel_ProductModelID" Association="Self.FK_Product_ProductModel_ProductModelID">
             <End Role="ProductModel" EntitySet="ProductModel" />
-            <End Role="Product" EntitySet="Product" />
+            <End Role="Product" EntitySet="Products" />
           </AssociationSet>
           <AssociationSet Name="FK_SalesOrderDetail_Product_ProductID" Association="Self.FK_SalesOrderDetail_Product_ProductID">
-            <End Role="Product" EntitySet="Product" />
+            <End Role="Product" EntitySet="Products" />
             <End Role="SalesOrderDetail" EntitySet="SalesOrderDetail" />
           </AssociationSet>
           <AssociationSet Name="FK_ProductCategory_ProductCategory_ParentProductCategoryID_ProductCategoryID" Association="Self.FK_ProductCategory_ProductCategory_ParentProductCategoryID_ProductCategoryID">
@@ -839,7 +839,7 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Product">
+          <EntitySetMapping Name="Products">
             <EntityTypeMapping TypeName="AWLTModel.Product">
               <MappingFragment StoreEntitySet="Product">
                 <ScalarProperty Name="ProductID" ColumnName="ProductID" />

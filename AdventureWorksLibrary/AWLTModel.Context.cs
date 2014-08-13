@@ -30,7 +30,7 @@ namespace AdventureWorksLibrary
         public virtual DbSet<Address> Address { get; set; }
         public virtual DbSet<Customer> Customer { get; set; }
         public virtual DbSet<CustomerAddress> CustomerAddress { get; set; }
-        public virtual DbSet<Product> Product { get; set; }
+        public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<ProductCategory> ProductCategory { get; set; }
         public virtual DbSet<ProductDescription> ProductDescription { get; set; }
         public virtual DbSet<ProductModel> ProductModel { get; set; }
